@@ -1,12 +1,15 @@
-import {Directive, Input, HostListener} from '@angular/core';
+import {Directive, Component, Input, HostListener} from '@angular/core';
 
-@Directive({selector: 'ngb-dropdown', host: {'class': 'dropdown', '[class.open]': 'open'}})
+@Directive({
+	selector: 'ngb-dropdown',
+	 host: {'class': 'dropdown', '[class.open]': 'open'}})
 export class NgbDropdown {
   @Input() open = false;
 }
 
-@Directive({
+@Component({
   selector: '[ngb-dropdown-togglee]',
+  template: `<ng-content></ng-content>`,
   host: {'class': 'dropdown-togglee', 'aria-haspopup': 'true', '[attr.aria-expanded]': '_dropdown.open'}
 })
 export class NgbDropdownTogglee {

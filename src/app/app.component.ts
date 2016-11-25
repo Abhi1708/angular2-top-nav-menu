@@ -30,6 +30,28 @@ export class AppComponent {
       text: 'Import Guarantor Contracts'
     }
   ];
+  dropdownBill: Array<any> = [
+    {
+      text: 'Form 1034E',
+    },
+    {
+      text: 'Note Delivery Cover Sheet',
+    },
+    {
+      text: 'Bill of Sale ID'
+    }
+  ];
+  dropdownContract: Array<any> = [
+    {
+      text: 'Take of Guarantor Contract',
+    },
+    {
+      text: 'Pair of Contract',
+    },
+    {
+      text: 'View Import Contract Results'
+    }
+  ];
   toggleDropdown() {
     this.isOpen = !this.isOpen;
   }

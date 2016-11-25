@@ -25,20 +25,34 @@
 </ngb-dropdown>
 </li>
 
-
 <li>
 <ngb-dropdown>
-  <li ngb-dropdown-togglee class="main btn" >Settlements</li>
-  
+  <li ngb-dropdown-togglee class="main btn">
+    Bills
+  </li>
   <div class="dropdown-menu">
-    <div class="dropdown-item">Form 1034E</div>
-    <div class="dropdown-item">Note Delivery Cover Sheet</div>
-    <div class="dropdown-item">Bill of Sale</div>
+    <a href class="dropdown-item" *ngFor="let bill of dropdownBill">
+      {{bill.text}}
+    </a>
   </div>
 </ngb-dropdown>
 </li>
 
 <li>
+<ngb-dropdown>
+  <li ngb-dropdown-togglee class="main btn">
+    Contracts
+  </li>
+  <div class="dropdown-menu">
+    <a href class="dropdown-item" *ngFor="let contract of dropdownContract">
+      {{contract.text}}
+    </a>
+  </div>
+</ngb-dropdown>
+</li>
+
+
+<!-- <li>
 <ngb-dropdown>
   <li ngb-dropdown-togglee class="main btn" >Third Party</li>
   
@@ -48,7 +62,7 @@
     <div class="dropdown-item">View Import Contract Results</div>
   </div>
 </ngb-dropdown>
-</li>
+</li> -->
 
 
 <li class="right">
