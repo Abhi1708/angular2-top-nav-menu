@@ -1,6 +1,9 @@
-<ngb-dropdown class="btn-group">
-  <li ngb-dropdown-togglee class="btn btn-secondary" type="button">
-    Toggle dropdown
+<body width="100%">
+<ul id="ul_top">
+<li>
+<ngb-dropdown>
+  <li ngb-dropdown-togglee class="main btn">
+    Contracts
   </li>
   <div class="dropdown-menu">
     <a href class="dropdown-item" *ngFor="let menu of dropdownMenu">
@@ -8,26 +11,67 @@
     </a>
   </div>
 </ngb-dropdown>
+</li>
+<li>
+<ngb-dropdown>
+  <li ngb-dropdown-togglee class="main btn">
+    Loans
+  </li>
+  <div class="dropdown-menu">
+    <a href class="dropdown-item" *ngFor="let loan of dropdownLoan">
+      {{loan.text}}
+    </a>
+  </div>
+</ngb-dropdown>
+</li>
 
-<ngb-dropdown class="btn-group">
-  <button ngb-dropdown-togglee  type="button" class="btn btn-secondary">Action</button>
+
+<li>
+<ngb-dropdown>
+  <li ngb-dropdown-togglee class="main btn" >Settlements</li>
   
   <div class="dropdown-menu">
-    <div class="dropdown-item">Action</div>
-    <div class="dropdown-item">Another action <br> Something else here</div>
-    <div class="dropdown-item">Something else here</div>
-    <div class="dropdown-divider"></div>
-    <div class="dropdown-item" href="#">Separated link</div>
+    <div class="dropdown-item">Form 1034E</div>
+    <div class="dropdown-item">Note Delivery Cover Sheet</div>
+    <div class="dropdown-item">Bill of Sale</div>
   </div>
 </ngb-dropdown>
+</li>
 
+<li>
 <ngb-dropdown>
-  <button class="btn btn-secondary" type="button" ngb-dropdown-togglee>
-    Dropdown
-  </button>
-  <div class="dropdown-menu full-width" aria-labelledby="dropdownMenu1">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+  <li ngb-dropdown-togglee class="main btn" >Third Party</li>
+  
+  <div class="dropdown-menu">
+    <div class="dropdown-item">Take out Guarantor Contract</div>
+    <div class="dropdown-item">Pair-off Contract</div>
+    <div class="dropdown-item">View Import Contract Results</div>
   </div>
 </ngb-dropdown>
+</li>
+
+
+<li class="right">
+<ngb-dropdown>
+  <li class="main btn margin_right15" ngb-dropdown-togglee>
+    121898 &raquo;
+  </li>
+  <div class="dropdown-menu">
+    <div class="dropdown-item">
+    	<p class="sub-label-txt">ORGANIZATION</p>
+    	<p>Bank of American,N.A.</p>
+    	<p>(121898, 153552,161026,9000004)</p>
+    </div>
+    <div class="dropdown-item">
+    	BRANCH<br>73209
+    </div> 
+    <div class="dropdown-item">
+    	SELLER/SERVICER<br>121898
+    </div>
+    <div class="dropdown-divider"></div>
+    <a href="" class="dropdown-item underline">Change User Context</a>
+  </div>
+</ngb-dropdown>
+</li>
+</ul>
+</body>
