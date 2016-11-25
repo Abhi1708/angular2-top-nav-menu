@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent} from './app.component';
-import {NgbDropdown, NgbDropdownTogglee} from './dropdown';
+import {AppDropdown, AppDropdowncollapse} from './dropdown';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NgbDropdown,
-    NgbDropdownTogglee
+    AppDropdown,
+    AppDropdowncollapse
   ],
   imports: [
     BrowserModule,
