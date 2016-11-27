@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  templateUrl: 'app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
@@ -10,18 +10,34 @@ export class AppComponent {
   
   dropdownMenu: Array<any> = [
     {
-      text: 'Request FM Price Sheet',
+      text: 'ORGANIZATION:Bank of American,N.A.(121898)',
+      href: 'http://www.google.com'
     },
     {
-      text: 'Add Loans to COntract',
+      text: 'BRANCH: 73209',
+      href: 'http://www.google.com'
     },
     {
-      text: 'View COntract Pipeline'
+      text: 'SELLER/SERVICER: 121898',
+      href: 'http://www.google.com'
     }
   ];
+
+  dropdownContext: Array<any> = [ 
+	  {
+	  	text: 'Change User Context'
+	  },
+  ];
+
+
   toggleDropdown() {
     this.isOpen = !this.isOpen;
   }
+  
+  toggleTopnav() {
+  	this.isOpen = !this.isOpen;
+  }
+    
 }
 
 

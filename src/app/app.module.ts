@@ -5,12 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent} from './app.component';
 import {AppDropdown, AppDropdowncollapse} from './dropdown.component';
+import {AppTopnav } from './topnav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppDropdown,
-    AppDropdowncollapse
+    AppDropdowncollapse,
+    AppTopnav,
   ],
   imports: [
     BrowserModule,
