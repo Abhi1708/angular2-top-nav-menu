@@ -1,33 +1,19 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'my-app',
+  templateUrl: './app/app.component.html',
+  styleUrls: ['./app/app.component.css']
 })
 export class AppComponent {
   isOpen: boolean = false;
-  
-  dropdownMenu: Array<any> = [
-    {
-      text: 'ORGANIZATION:Bank of American,N.A.(121898)',
-      href: 'http://www.google.com'
-    },
-    {
-      text: 'BRANCH: 73209',
-      href: 'http://www.google.com'
-    },
-    {
-      text: 'SELLER/SERVICER: 121898',
-      href: 'http://www.google.com'
-    }
-  ];
 
-  dropdownContext: Array<any> = [ 
-	  {
-	  	text: 'Change User Context'
-	  },
-  ];
+  orgName: String = 'Bank of American,N.A.(121898)';
+  branchNumber: String = '73209';
+  sellerNumber: String = '121898';
+  
+
+  
 
 
   toggleDropdown() {
@@ -36,5 +22,8 @@ export class AppComponent {
   
   
 }
+
+
+
 
 
