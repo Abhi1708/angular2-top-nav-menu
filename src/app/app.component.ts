@@ -34,10 +34,7 @@ export class AppComponent {
     this.isOpen = !this.isOpen;
   }
   
-  toggleTopnav() {
-  	this.isOpen = !this.isOpen;
-  }
-    
+  
 }
 
 
