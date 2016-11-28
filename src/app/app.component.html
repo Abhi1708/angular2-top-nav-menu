@@ -8,13 +8,25 @@
 	    121898 &raquo;
 	  </li>
 	  <div class="dropdown-menu">
-	    <a [href]="menu.href" class="dropdown-item" *ngFor="let menu of dropdownMenu">
-	      {{menu.text}}
-	    </a>
+	    <div class="dropdown-item">
+	    	<div class="sub-label-txt">ORGANIZATION</div>
+	    	<div>{{orgName}}
+	    	</div>
+	    </div>
+	    <div class="dropdown-item">
+	    	<div class="sub-label-txt">BRANCH</div>
+	    	<div>{{branchNumber}}</div>
+	    </div> 
+	    <div class="dropdown-item">
+	    	<div class="sub-label-txt">SELLER/SERVICER</div>
+	    	<div>{{sellerNumber}}</div>
+	    </div>
 	    <div class="dropdown-divider"></div>
-	    <a href="" class="dropdown-item underline" *ngFor="let Context of dropdownContext">{{Context.text}}</a>
+	    <a href="" class="dropdown-item underline" >Change User Context</a>
 	  </div>
 	</app-dropdown>
 	</li>
 	</ul>
+
+
 
